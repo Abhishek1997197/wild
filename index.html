@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Browsing Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; overflow: hidden; text-align: center; background-color: #111; color: white; }
+        #header { padding: 10px; background: #222; color: white; }
+        .container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px; justify-content: center; }
+        .site-box { width: 250px; height: 150px; border: 2px solid #333; position: relative; cursor: pointer; transition: transform 0.3s; overflow: hidden; border-radius: 10px; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+        .site-box:hover { transform: scale(1.05); border-color: #fff; }
+        .site-box::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://leonardo.ai/wp-content/uploads/2023/12/LeoDiffXL_5.jpg'); background-size: cover; background-position: center; filter: blur(2px); opacity: 0.6; }
+        .site-box span { position: absolute; background: rgba(0, 0, 0, 0.7); color: white; padding: 8px 12px; font-size: 18px; text-align: center; border-radius: 5px; z-index: 2; }
+        .highlight { border-color: green !important; }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Secure Browsing - Open in Google</h1>
+        <script async src="https://cse.google.com/cse.js?cx=c4b2ecd075af14566"></script>
+        <div class="gcse-search"></div>
+    </div>
+    <div class="container">
+        <a class="site-box" href="https://www.movixo.info/" target="_self"><span>Movixo</span></a>
+        <a class="site-box" href="https://123moviestan.com/" target="_self"><span>123MoviesTan</span></a>
+        <a class="site-box" href="https://andyday.tv/movie" target="_self"><span>AndyDay TV</span></a>
+        <a class="site-box" href="https://www.animeshqip.org/" target="_self"><span>AnimesHQIP</span></a>
+        <a class="site-box" href="https://movies4u.lc/" target="_self"><span>Movies4U</span></a>
+        <a class="site-box" href="https://www.5movierulz.food/" target="_self"><span>Movierulz</span></a>
+        <a class="site-box" href="https://thepiratebay.org/index.html" target="_self"><span>The Pirate Bay</span></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
